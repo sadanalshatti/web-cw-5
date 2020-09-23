@@ -18,6 +18,9 @@ body {
 /* ---------------(الشريط الجانبي: المطلوب #1)-------------- */
 /* ---------------%اجعل الشريط الجانبي بطول 100------------- */
 .side-bar {
+  display: flex;
+ 
+  height: 100%;
   /* flex */
 }
 
@@ -25,8 +28,10 @@ body {
 /* ------------------%اجعل العنوان بعرض 100----------------- */
 /* --اجعل العناصر (المنيو، معرفة المزيد، تواصل) تظهر بالنص-- */
 .head-ul {
+  width: 100%;
   /* flex */
 }
+
 
 
 /* ------------------(المحتوى: المطلوب #2)------------------ */
@@ -42,12 +47,17 @@ body {
   width: 700px;
   margin-top: 50px;
   border-radius: 20px;
+  justify-content: center;
+  margin: auto;
+
   /* flex */
 }
 .header {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  align-content: center;
+  justify-content: center;
 }
 
 .navbar {
@@ -66,16 +76,19 @@ body {
 .head-li {
   display: inline;
   padding: 15px;
+  align-content: center;
 }
 .imgs {
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
 }
 img {
   width: 150px;
   height: 150px;
   border-radius: 20px;
   margin: 10px;
+  align-content: center;
 }
 
 .menu-title {
